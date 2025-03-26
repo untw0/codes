@@ -3,7 +3,7 @@
 class Test {
 public:
     void show() {
-        std::cout << "Objeto ativo!" << std::endl;
+        std::cout << "Active object!" << std::endl;
     }
 };
 
@@ -13,5 +13,3 @@ int main() {
     ptr->show(); // Invalid pointer usage (Use-After-Free)
     return 0;
 }
-
-// The object is deleted, but the pointer is still used, leading to undefined behavior and possibly arbitrary code execution.
